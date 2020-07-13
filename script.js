@@ -15,9 +15,10 @@ function promptMe() {
     var userUpper = confirm("Include uppercase letters?");
     var userNumber = confirm("Include numbers?"); 
     var userSymbol = confirm("Include symbols?");
+}
 
   // Randomize functions
-  function getRandomLower(lower){
+  /*function getRandomLower(lower){
     for(var i=0; i < Array.length; i++) {
       console.log (array[i]),
     }       
@@ -36,7 +37,7 @@ function promptMe() {
       for(var i=0; i < Array.length; i++) {
         console.log (array[i]),
           }       
-          } 
+        }*/
 
 // Write password to the #password input
 function writePassword() { 
@@ -53,7 +54,7 @@ generateBtn.addEventListener("click", writePassword);
 
 
     
-}
+
   
 
 
