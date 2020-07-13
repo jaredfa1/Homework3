@@ -28,18 +28,20 @@ function promptMe() {
 
 
 
+
+
 //Listener
 generateEL.addEventListener('click', () => {
     const length = +lengthEL.value;
-    const hasLower = lowercaseEL.checked;
-    const hasUpper = uppercaseEL.checked;
-    const hasNumber = numbersEL.checked;
-    const hasSymbol = symbolsEL.checked;
+    const hasLower = lowercaseEL.confirm;
+    const hasUpper = uppercaseEL.confirm;
+    const hasNumber = numbersEL.confirm;
+    const hasSymbol = symbolsEL.confirm;
 
   resultEL.innerText = generatePassword(haslower, hasUpper, hasNmber, hasSymbol)
 })
 
-//password to clipboard
+//copy to clipboard
 clipboardEL.addEventListener('click', () =>{
     const textarea = document.createElement('textarea');
     cost password = resultEL.innerText;
